@@ -13,11 +13,46 @@ klara:
 
     You speak warmly but concisely. You notice patterns. You care.
 
-schedule:
+scheduler:
+  timezone: "America/Halifax"
   calendar_poll_minutes: 5
-  gmail_poll_minutes: 15
-  daily_anchor_time: "07:00"
+  gmail_poll_minutes: 10
+
+daily_anchor:
+  briefing_time: "07:00"
+  include_world_news: true
+  max_headlines: 5
+
+gmail:
+  job_keywords:
+    - "job opportunity"
+    - "we're hiring"
+    - "application received"
+    - "interview invitation"
+    - "position"
+    - "career opportunity"
+    - "recruiting"
+    - "job posting"
+    - "we'd like to invite you"
+    - "your application"
+  job_senders: []
 
 notifications:
   quiet_hours_start: "22:00"
   quiet_hours_end: "07:00"
+
+world_briefing:
+  rss_feeds:
+    - name: "BBC World"
+      url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+    - name: "AP News"
+      url: "https://apnews.com/index.rss"
+    - name: "CBC Nova Scotia"
+      url: "https://www.cbc.ca/cmlink/rss-canada-novascotia"
+    - name: "Reuters Top"
+      url: "https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best"
+
+dashboard:
+  host: "127.0.0.1"
+  port: 5000
+  debug: false
