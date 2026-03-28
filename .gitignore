@@ -1,0 +1,7 @@
+config/credentials/
+!config/credentials/.gitkeep
+.env
+db/*.db
+__pycache__/
+*.pyc
+.venv/
