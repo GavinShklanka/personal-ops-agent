@@ -1,5 +1,7 @@
 config/credentials/
 !config/credentials/.gitkeep
+config/credentials/credentials.json
+config/credentials/token.json
 .env
 db/*.db
 __pycache__/
